@@ -2,3 +2,8 @@
 
 フラグを出す実行ファイルがあるのだが、プログラム(elfファイル)作成者が出力する関数を書き忘れてしまったらしい… 
 reverse100
+
+[Ans.]
+
+https://yu8mada.com/2018/07/25/install-gnu-commands-on-macos-with-homebrew/
+brew install binutils
