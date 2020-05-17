@@ -1,8 +1,18 @@
-[Question]
+# [Question]
 
-JPEGという画像ファイルのフォーマットでは、撮影時の日時、使われたカメラ、位置情報など様々な情報(Exif情報)が付加されることがあるらしい。 
-この情報から、写真に写っている川の名前を特定して欲しい。 
-問題ファイル： river.jpg 
+> JPEGという画像ファイルのフォーマットでは、撮影時の日時、使われたカメラ、位置情報など様々な情報(Exif情報)が付加されることがあるらしい。 
+> この情報から、写真に写っている川の名前を特定して欲しい。 
+> 問題ファイル： river.jpg 
+>
+> FLAGの形式は、"cpaw{river_name}" 
+> 例：隅田川 → cpaw{sumidagawa}
 
-FLAGの形式は、"cpaw{river_name}" 
-例：隅田川 → cpaw{sumidagawa}
+# [Ans.]
+
+## 1.Exiftoolで位置情報を読み取る。
+'
+exiftool -n -lang ja river.jpg
+'
+
+# 2.位置情報から川を見つける。
+
