@@ -18,3 +18,5 @@ irb
 [numbers].sort.reverse
 
 [copied numbers].join()
+
+https://www.slideshare.net/noob00/ruby4ctf
