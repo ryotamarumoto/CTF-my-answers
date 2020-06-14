@@ -5,3 +5,11 @@
 http://q15.ctf.cpaw.site 
 
 ※この問題のサーバへの攻撃はお止め下さい
+
+Ans.
+
+open developper tool(⌘+option+i) at Q15
+see Network, and then click the link
+open the Headers of "q15.ctf.cpaw.site"
+
+there's a flag at X-Flag in Respose header
